@@ -4,22 +4,22 @@ import './Projects.css';
 const projectsData = [
   {
     title: "EHR Deployment",
-    image: `${process.env.PUBLIC_URL}/images/projects/project4.png`,
+    image: "/images/projects/project4.png",
     description: "Designed technical infrastructures, employed operational techniques to quantify improvements, resulting in a 20% increase in hospital revenue and managed a comprehensive risk assessment for the model."
   },
   {
     title: "EHR Project Management",
-    image: `${process.env.PUBLIC_URL}/images/projects/project2.png`,
+    image: "/images/projects/project2.png",
     description: "Applied adaptive project management techniques, conducted risk assessments, estimated costs, demonstrated project goals, budget, schedule, stakeholder analysis, and presented a product demo."
   },
   {
     title: "Clinical Decision Support Integration",
-    image: `${process.env.PUBLIC_URL}/images/projects/project1.png`,
+    image: "/images/projects/project1.png",
     description: "Integrated a diabetes care module within an existing Health Information System, addressing interoperability, privacy,and security to improve healthcare quality, clinical outcomes, and enhanced patient involvement."
   },
   {
     title: "BMI Analyser",
-    image: `${process.env.PUBLIC_URL}/images/projects/project3.png`,
+    image: "/images/projects/project3.png",
     description: "Developed a BMI calculator using object-oriented programming, used classes to calculate and manage BMI, files to store and retrieve data, and matplotlib to graphically display BMI overtime."
   }
 ];
