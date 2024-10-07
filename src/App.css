@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.navigation {
+  background-color: #2c3e50;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #ecf0f1;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  color: #3498db;
+}
+
+.nav-button.active {
+  color: #3498db;
+}
+
+main {
+  padding-top: 60px; /* Adjust this value based on your navigation bar height */
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    padding: 10px 0;
+  }
+
+  .nav-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  main {
+    padding-top: 50px; /* Adjust for smaller screens */
+  }
+}
+
+.navigation.scrolling-down {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.navigation:hover,
+.navigation:focus-within {
+  opacity: 1;
+  pointer-events: auto;
+}
